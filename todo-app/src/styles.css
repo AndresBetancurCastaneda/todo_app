@@ -1,0 +1,157 @@
+/* ======== REGLAS GENERALES ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+/* ======== CONTENEDOR GENERAL ======== */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== TITULOS ======== */
+h1, h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ======== NAV EN HOME ======== */
+nav a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ======== LISTA DE TODOS ======== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #fff;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+  background: #e6ffe6;
+  border-left: 5px solid #28a745;
+}
+
+/* ======== TEXTO DEL TODO ======== */
+li span {
+  flex: 1;
+  margin-right: 15px;
+}
+
+/* ======== BOTONES ======== */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 7px 10px;
+  margin-left: 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+/* Botón completar */
+button:first-of-type {
+  background: #28a745;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background: #1f7a34;
+}
+
+/* Botón eliminar */
+button:last-of-type {
+  background: #dc3545;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background: #b52a37;
+}
+
+/* ======== FORMULARIOS ======== */
+form {
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: white;
+  padding: 10px 18px;
+}
+
+button[type="submit"]:hover {
+  background: #0666cd;
+}
+
+/* ======== PLACEHOLDERS ======== */
+.placeholder {
+  padding: 10px;
+  background: #e8e8e8;
+  border-left: 4px solid #888;
+  border-radius: 6px;
+}
+
+/* ======== FILTROS (placeholder) ======== */
+.filters {
+  background: #fff3cd;
+  padding: 10px;
+  border-left: 5px solid #ffcc00;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
