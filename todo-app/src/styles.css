@@ -1,24 +1,28 @@
 /* ======== REGLAS GENERALES ======== */
+/* ======== RESET Y BASE ======== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #f4f4f4;
-  padding: 20px;
-  color: #333;
+  display: flex;
+  justify-content: center;
+  background: #eef1f5;
+  padding: 30px;
+  color: #2d2d2d;
+  line-height: 1.6;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
-  padding: 25px;
+  padding: 30px;
   background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* ======== CONTENEDOR GENERAL ======== */
@@ -26,27 +30,30 @@ body {
   max-width: 700px;
   margin: auto;
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* ======== TITULOS ======== */
 h1, h2 {
-  margin-bottom: 15px;
-  color: #333;
+  margin-bottom: 18px;
+  color: #1e1e1e;
+  font-weight: 600;
 }
 
-/* ======== NAV EN HOME ======== */
+/* ======== NAV BAR ======== */
 nav a {
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 20px;
   font-size: 18px;
-  color: #007bff;
+  color: #2563eb;
+  font-weight: 500;
+  transition: 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #1e40af;
 }
 
 /* ======== LISTA DE TODOS ======== */
@@ -57,110 +64,124 @@ ul {
 }
 
 li {
-  background: #fff;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-left: 5px solid #007bff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 li.completed {
-  background: #e6ffe6;
-  border-left: 5px solid #28a745;
+  background: #e9ffe9;
+  border-left: 5px solid #22c55e;
 }
 
 /* ======== TEXTO DEL TODO ======== */
 li span {
   flex: 1;
   margin-right: 15px;
+  font-size: 17px;
 }
 
 /* ======== BOTONES ======== */
 button {
   cursor: pointer;
   border: none;
-  padding: 7px 10px;
+  padding: 8px 14px;
   margin-left: 8px;
-  border-radius: 5px;
-  transition: 0.2s;
+  border-radius: 6px;
+  transition: 0.25s ease;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* Botón completar */
 button:first-of-type {
-  background: #28a745;
+  background: #22c55e;
   color: white;
 }
 
 button:first-of-type:hover {
-  background: #1f7a34;
+  background: #16a34a;
 }
 
 /* Botón eliminar */
 button:last-of-type {
-  background: #dc3545;
+  background: #ef4444;
   color: white;
 }
 
 button:last-of-type:hover {
-  background: #b52a37;
+  background: #c62828;
 }
 
 /* ======== FORMULARIOS ======== */
 form {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #bbb;
-  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 18px;
   font-size: 16px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 3px rgba(37, 99, 235, 0.4);
 }
 
 button[type="submit"] {
-  background: #007bff;
+  background: #2563eb;
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
+  font-size: 16px;
 }
 
 button[type="submit"]:hover {
-  background: #0666cd;
+  background: #1e40af;
 }
 
 /* ======== PLACEHOLDERS ======== */
 .placeholder {
-  padding: 10px;
-  background: #e8e8e8;
+  padding: 12px;
+  background: #f0f0f0;
   border-left: 4px solid #888;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
-/* ======== FILTROS (placeholder) ======== */
+/* ======== FILTROS ======== */
 .filters {
-  background: #fff3cd;
-  padding: 10px;
-  border-left: 5px solid #ffcc00;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  background: #fff7d6;
+  padding: 12px;
+  border-left: 5px solid #facc15;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
+
+/* ======== BOTÓN GENERAL (EVITA DUPLICADOS) ======== */
 button {
-  background: #007bff;
+  background: #2563eb;
   color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #1e40af;
 }
