@@ -1,16 +1,55 @@
-# React + Vite
+# Aplicación de Gestión de Tareas (To-Dos)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación de gestión de tareas (To-Dos) construida con **React**.  
+Permite a los usuarios **registrarse, crear tareas, marcarlas como completadas, editarlas y eliminarlas**, utilizando una API externa para almacenar y obtener la información.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación está organizada en componentes reutilizables y páginas independientes, siguiendo buenas prácticas de React. También incluye manejo de estados, control de errores, validaciones básicas y pantallas de carga para mejorar la experiencia del usuario.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Características principales
 
-## Expanding the ESLint configuration
+- ✏️ **Crear nuevas tareas** con validación básica  
+- 📋 **Listado dinámico de tareas** obtenido desde la API  
+- ✅ **Marcar tareas como completadas o pendientes**  
+- ❌ **Eliminar tareas** individualmente  
+- 👤 **Pantalla de registro de usuario**  
+- 🔄 **Edición inicial de tareas (placeholder)**  
+- 🔍 **Sistema de filtros (placeholder)**  
+- ⏳ **Indicadores de carga (“loading”)**  
+- ⚠️ **Manejo de errores con try/catch**  
+- 📦 **Estructura modular y separada en componentes**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- React (Vite)  
+- JavaScript (ES6+)  
+- Fetch API  
+- CSS modularizado  
+- React Router
+
+---
+
+## Estructura del proyecto
+
+- `/components`: elementos reutilizables (TodoList, TodoItem, Loader, filtros, etc.)  
+- `/pages`: pantallas principales (Home, Todos, Register, EditTodo)  
+- `/api.js`: funciones para comunicación con la API  
+- Archivos de estilos globales
+
+---
+
+## Instalación
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone <url-del-repositorio>
+  luego se debe entrar en la carpeta del proyecto con 
+  cd (nombre del proyecto)
+  y por ultimo en el terminal de visual debes correr el proyecto con el comando 
+  npm run dev, y entrar en el link que te arroja con control + click
