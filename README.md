@@ -63,3 +63,4 @@ La aplicación está organizada en componentes reutilizables y páginas independ
   e instala npm install para el funcioanmiento del proyecto
   y por ultimo en el terminal de visual debes correr el proyecto con el comando 
   npm run dev, y entrar en el link que te arroja con control + click
+![alt text](image-4.png)
