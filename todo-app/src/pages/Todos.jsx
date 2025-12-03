@@ -56,7 +56,7 @@ export default function Todos({ todos, setTodos }) {
 
   return (
     <div className="container">
-      <h1>Lista de TODOs</h1>
+      <h1>Lista de TODOS</h1>
 
       {/* Placeholder de filtros */}
       <TodoFilters />
@@ -75,6 +75,7 @@ export default function Todos({ todos, setTodos }) {
           ))}
         </ul>
       )}
+
 
       {/* Botón para volver a la página principal */}
       <Link to="/">
