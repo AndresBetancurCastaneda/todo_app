@@ -41,7 +41,7 @@ export default function Register({ todos, setTodos }) {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <button type="submit">Registrar</button>
+        <button type="submit1">Registrar</button>
       </form>
 
       {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
