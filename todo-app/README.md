@@ -11,16 +11,16 @@ La aplicación está organizada en componentes reutilizables y páginas independ
 
 ## Características principales
 
-- ✏️ **Crear nuevas tareas** con validación básica  
-- 📋 **Listado dinámico de tareas** obtenido desde la API  
-- ✅ **Marcar tareas como completadas o pendientes**  
-- ❌ **Eliminar tareas** individualmente  
-- 👤 **Pantalla de registro de usuario**  
-- 🔄 **Edición inicial de tareas (placeholder)**  
-- 🔍 **Sistema de filtros (placeholder)**  
-- ⏳ **Indicadores de carga (“loading”)**  
-- ⚠️ **Manejo de errores con try/catch**  
-- 📦 **Estructura modular y separada en componentes**
+-  **Crear nuevas tareas** con validación básica  
+-  **Listado dinámico de tareas** obtenido desde la API  
+-  **Marcar tareas como completadas o pendientes**  
+-  **Eliminar tareas** individualmente  
+-  **Pantalla de registro de usuario**  
+-  **Edición inicial de tareas (placeholder)**  
+-  **Sistema de filtros (placeholder)**  
+-  **Indicadores de carga (“loading”)**  
+-  **Manejo de errores con try/catch**  
+-  **Estructura modular y separada en componentes**
 
 ---
 
@@ -42,6 +42,12 @@ La aplicación está organizada en componentes reutilizables y páginas independ
 - Archivos de estilos globales
 
 ---
+## Commist del proyecto e interfaz de navegador
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](<Captura de pantalla 2025-12-03 132855.png>)
+![alt text](image-3.png)
+![alt text](image.png)
 
 ## Instalación
 
@@ -51,5 +57,7 @@ La aplicación está organizada en componentes reutilizables y páginas independ
    git clone <url-del-repositorio>
   luego se debe entrar en la carpeta del proyecto con 
   cd (nombre del proyecto)
+  e instala npm install para el funcioanmiento del proyecto
   y por ultimo en el terminal de visual debes correr el proyecto con el comando 
   npm run dev, y entrar en el link que te arroja con control + click
+
